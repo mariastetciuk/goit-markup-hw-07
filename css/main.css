@@ -629,6 +629,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
+  text-align: center;
   letter-spacing: 0.03em;
   border: none;
   color: var(--main-title-color);
@@ -647,22 +648,24 @@ a {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project .project__link {
+.project__link {
   display: inline-block;
   -webkit-transition: -webkit-box-shadow var(--duration-timing);
   transition: -webkit-box-shadow var(--duration-timing);
   transition: box-shadow var(--duration-timing);
   transition: box-shadow var(--duration-timing), -webkit-box-shadow var(--duration-timing);
 }
-.project .project__link:hover, .project .project__link:focus {
+.project__link:hover, .project__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.project .project__thumb {
+
+.project__thumb {
   position: relative;
   overflow: hidden;
 }
-.project .project__overlay {
+
+.project__overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -687,23 +690,28 @@ a {
   transition: transform var(--duration-timing);
   transition: transform var(--duration-timing), -webkit-transform var(--duration-timing);
 }
-.project__link:hover .project .project__overlay, .project__link:focus .project .project__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-.project .project__description {
+
+.project__description {
   font-size: 18px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
-.project .project__wrapper {
+
+.project__link:hover .project__overlay,
+.project__link:focus .project__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.project__wrapper {
   padding: 20px 24px;
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
-.project .project__label {
+
+.project__label {
   margin-bottom: 4px;
   font-family: inherit;
   font-size: 18px;
@@ -711,7 +719,8 @@ a {
   letter-spacing: 0.06em;
   color: var(--main-title-color);
 }
-.project .project__classification {
+
+.project__classification {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
