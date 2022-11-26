@@ -65,7 +65,7 @@
     <symbol id="close" viewBox="0 0 32 32">
       <path d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
     </symbol> 
-    <symbol id="send" viewBox="0 0 32 32">
+    <symbol fill="#fff" style="fill: var(--color1, #fff)" id="send" viewBox="0 0 32 32">
       <path d="M32 0 0 18l10.227 3.788L26 7 14.002 23.186l.01.004-.012-.004V32l5.735-6.691L27 28l5-28z" />
     </symbol>
     <symbol id="person" viewBox="0 0 32 32">
