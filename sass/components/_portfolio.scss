@@ -1,10 +1,12 @@
- .filter {
+// =======================filter=========================
+.filter {
    display: flex;
    justify-content: center;
    gap: 8px;
    margin-bottom: 50px;
+}
  
- .filter__button {
+.filter__button {
    min-height: 38px;
    padding: 6px 22px;
 
@@ -27,11 +29,10 @@
       color: var(--main-background-color);
       background-color: var(--button-background-color);
       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
    }
 }
-}
 
+// ====================================project========================
 .project__link {
    display: inline-block;
 
@@ -42,8 +43,6 @@
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
    }
 }
-
-
 
 .project__thumb {
    position: relative;
@@ -71,6 +70,11 @@
    transition: transform var(--duration-timing);
 }
 
+.project__link:hover .project__overlay,
+.project__link:focus .project__overlay {
+   transform: translateY(0);
+}
+
 .project__description {
    font-size: 18px;
    line-height: calc(28 / 18);
@@ -79,18 +83,11 @@
    color: #FFFFFF;
 }
 
-.project__link:hover .project__overlay,
-.project__link:focus .project__overlay {
-   transform: translateY(0);
-}
-
-
 .project__wrapper {
    padding: 20px 24px;
    border-right: 1px solid var(--border-color);
    border-left: 1px solid var(--border-color);
    border-bottom: 1px solid var(--border-color);
-
 }
 
 .project__label {

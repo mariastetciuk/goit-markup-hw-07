@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     margin-left: auto;
+}
 
- .contacts__item:not(:last-child) {
+.contacts__item:not(:last-child) {
     margin-right: 50px;
-    }
+}
 
- .contacts__link {
+.contacts__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,13 +28,12 @@
     &:focus {
         color: var(--accent-color);
         }
-    }
-
-
- .contacts__icon {
-        margin-right: 10px;
-        fill: currentColor;
-    }
 }
+
+.contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 
 

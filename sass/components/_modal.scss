@@ -16,9 +16,6 @@
     }
 }
 
-.modal {
-    
-}
 .modal__wrapper {
     position: absolute;
     top: 50%;
@@ -35,8 +32,6 @@
 
     opacity: 1;
     transition: transform var(--duration-timing), opacity var(--duration-timing);
-
-
 }
 
 .backdrop--is-hidden .modal__wrapper {
